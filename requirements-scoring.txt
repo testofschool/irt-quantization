@@ -1,0 +1,3 @@
+# Scoring pipeline (run_eval.py) — needs a llama.cpp Python binding.
+# Install a build matched to your hardware (CPU/CUDA/Metal); see llama-cpp-python docs.
+llama-cpp-python>=0.2.0

@@ -1,0 +1,97 @@
+{
+  "_note": "ILLUSTRATIVE EXAMPLE ONLY. These values demonstrate the output FORMAT of analyze_all.py. They are NOT measured experimental results. Running analyze_all.py on real response matrices (results/*.jsonl) overwrites this file with measured values.",
+  "F1_accuracy_floor": {
+    "f16": {
+      "easy": 0.82,
+      "chal": 0.34
+    },
+    "Q8_0": {
+      "easy": 0.8,
+      "chal": 0.32
+    },
+    "Q4_K_M": {
+      "easy": 0.76,
+      "chal": 0.3
+    },
+    "Q3_K_M": {
+      "easy": 0.72,
+      "chal": 0.28
+    },
+    "Q2_K": {
+      "easy": 0.64,
+      "chal": 0.26
+    },
+    "1.5B_Q8_0": {
+      "easy": 0.92,
+      "chal": 0.56
+    },
+    "1.5B_Q4_K_M": {
+      "easy": 0.9,
+      "chal": 0.52
+    },
+    "1.5B_Q2_K": {
+      "easy": 0.84,
+      "chal": 0.44
+    },
+    "llama1B_Q8_0": {
+      "easy": 0.88,
+      "chal": 0.5
+    },
+    "llama1B_Q4_K_M": {
+      "easy": 0.86,
+      "chal": 0.46
+    }
+  },
+  "F2_irt_recovery": {
+    "spearman_b_vs_hard": 0.438,
+    "p_value": 5.3e-06,
+    "auc": 0.74,
+    "mean_b_easy": -1.04,
+    "mean_b_chal": 1.03
+  },
+  "F3_family_invariance": {
+    "qwen_vs_full_rho": 0.966,
+    "half_subject_rho": 0.904,
+    "half_subject_std": 0.04
+  },
+  "F4_kl_difficulty": {
+    "0.5B_Q4_KM": {
+      "rho": 0.22,
+      "p": 0.02
+    },
+    "1.5B_Q4_KM": {
+      "rho": 0.42,
+      "p": 0.001
+    },
+    "1.5B_Q2_K": {
+      "rho": 0.48,
+      "p": 0.0005
+    },
+    "llama_Q4_KM": {
+      "rho": -0.038,
+      "p": 0.71,
+      "ci": [
+        -0.22,
+        0.17
+      ]
+    }
+  },
+  "F5_irt_dif": {
+    "spearman_dB_vs_3Bdiff": 0.089,
+    "ci": [
+      -0.12,
+      0.29
+    ],
+    "cv_folds": [
+      0.18,
+      -0.12,
+      0.25,
+      -0.08,
+      0.15
+    ]
+  },
+  "F6_irt_vs_averaging": {
+    "delta_rho_dense": 0.01,
+    "delta_rho_sparse": 0.02
+  }
+}

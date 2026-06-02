@@ -1,0 +1,4 @@
+# Analysis + figures only (analyze_all.py, make_figs.py). Pure-Python, no model backend.
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7

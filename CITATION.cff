@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: "Kang"
+    given-names: "Jung Min"
+    orcid: "https://orcid.org/0009-0007-9599-2792"
+title: "Quantization, Difficulty, and Item Response Theory: A Proposed Framework and Pre-specified Protocol for Testing When Psychometric Difficulty Signals Survive Compression"
+date-released: 2026-06-02
+url: "https://github.com/testofschool/irt-quantization"
+license: CC-BY-4.0
+abstract: "Proposal / methods paper. No empirical findings are claimed; example findings are output-format placeholders only. Code is MIT; ARC-derived data remains CC-BY-SA-4.0."

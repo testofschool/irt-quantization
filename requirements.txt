@@ -1,0 +1,4 @@
+# Umbrella file. For analysis/figures only:   pip install -r requirements-analysis.txt
+# For the scoring step as well:                pip install -r requirements-scoring.txt
+-r requirements-analysis.txt
+-r requirements-scoring.txt
