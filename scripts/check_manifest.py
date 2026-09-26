@@ -2,7 +2,7 @@
 """check_manifest.py — verify the repo has everything needed for full reproduction.
 
 Exit code 0 = ready to run the full pipeline from raw data.
-Exit code 1 = missing inputs (still fine for code review / reconstruction figures).
+Exit code 1 = missing inputs (still fine for code review / illustrative schematic figures).
 """
 import os, sys, json
 
@@ -32,5 +32,5 @@ def check():
 if __name__ == "__main__":
     ready = check()
     print("\n" + ("READY: full pipeline reproducible." if ready
-          else "NOT READY: add the missing files above (figures fall back to reconstruction)."))
+          else "NOT READY: add the missing files above (figures fall back to illustrative schematics)."))
     sys.exit(0 if ready else 1)

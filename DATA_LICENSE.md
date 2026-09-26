@@ -1,7 +1,8 @@
 # Data License
 
-This project releases two kinds of data with **different** licenses, because the
-ARC source is share-alike and cannot be relicensed.
+No data ships in this repository yet (`data/items.json` and `results/*.jsonl` are not
+included). When the data are released, they will be released as two kinds of data with
+**different** licenses, because the ARC source is share-alike and cannot be relicensed.
 
 ## ARC-derived content (questions, choices, answer keys)
 The item content in `data/items.json` is derived from the AI2 Reasoning Challenge
@@ -11,7 +12,7 @@ this derived content **remains CC BY-SA 4.0**. It is not, and cannot be, relicen
 ## Original scored model-output fields
 The fields produced by this project's scoring runs — per-item `correct`,
 `lp_correct`, and `opt_lp` in `results/*.jsonl`, and the aggregate statistics in
-`findings.json` — are released under **CC BY 4.0** where they are legally separable
+`findings.json` — will be released with the data under **CC BY 4.0** where they are legally separable
 from the ARC item text. Where a file interleaves ARC item content with scored
 outputs, the more restrictive **CC BY-SA 4.0** governs that file as a whole.
 

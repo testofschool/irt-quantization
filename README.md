@@ -13,7 +13,9 @@ whether Item Response Theory (IRT) item difficulty survives model quantization.
 ## What this is
 
 A method for treating each `(model, quantization-level)` pair as an IRT "subject," plus
-five pre-specified probes — each with an explicit positive/negative decision rule:
+five pre-specified probes — each with a stated positive/negative decision rule. The numeric
+margins that the rules for Probes 1–4 require are to be pre-specified before data collection
+and are not yet fixed:
 
 1. **Probe 1** — does IRT recover item difficulty from quantization subjects?
 2. **Probe 2** — does accuracy mask difficulty-dependent degradation (vs. KL)?
@@ -67,6 +69,8 @@ requirements*.txt, LICENSE, DATA_LICENSE.md, CITATION.cff
 
 ## Citation
 
+Archived on Zenodo: [10.5281/zenodo.20506084](https://doi.org/10.5281/zenodo.20506084)
+
 ```bibtex
 @misc{kang2026irtqf,
   title  = {Quantization, Difficulty, and Item Response Theory: A Proposed Framework
@@ -74,7 +78,10 @@ requirements*.txt, LICENSE, DATA_LICENSE.md, CITATION.cff
             Survive Compression},
   author = {Kang, Jung Min},
   year   = {2026},
-  note   = {Proposal / methods paper. arXiv:XXXX.XXXXX}
+  publisher = {Zenodo},
+  doi    = {10.5281/zenodo.20506084},
+  url    = {https://doi.org/10.5281/zenodo.20506084},
+  note   = {Proposal / methods paper}
 }
 ```
 

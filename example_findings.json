@@ -1,5 +1,5 @@
 {
-  "_note": "ILLUSTRATIVE EXAMPLE ONLY. These values demonstrate the output FORMAT of analyze_all.py. They are NOT measured experimental results. Running analyze_all.py on real response matrices (results/*.jsonl) overwrites this file with measured values.",
+  "_note": "ILLUSTRATIVE EXAMPLE ONLY. These values demonstrate the output FORMAT of analyze_all.py. They are NOT measured experimental results. Running analyze_all.py on real response matrices (results/*.jsonl) writes measured values to findings.json (findings_fast.json with --fast); it does not modify this file.",
   "F1_accuracy_floor": {
     "f16": {
       "easy": 0.82,
