@@ -27,11 +27,11 @@ PANEL = ["f16","Q8_0","Q6_K","Q5_K_M","Q4_0","Q4_K_M","Q3_K_M","Q2_K",
          "1.5B_Q8_0","1.5B_Q4_K_M","1.5B_Q2_K","llama1B_Q8_0","llama1B_Q4_K_M"]
 
 def _raw_ready():
-    """Raw mode requires the full panel present. Partial dirs -> reconstruction."""
+    """Raw mode requires the full panel present. Partial dirs -> illustrative schematic."""
     missing = [s for s in PANEL if not os.path.exists(os.path.join(results_dir, f"{s}.jsonl"))]
     if missing:
         print(f"make_figs: {len(missing)} panel file(s) missing "
-              f"(e.g. {missing[0]}.jsonl) -- staying in reconstruction mode")
+              f"(e.g. {missing[0]}.jsonl) -- staying in illustrative schematic mode")
         return False
     return True
 
@@ -107,7 +107,7 @@ if USE_RAW:
     raw = {"D": D, "ids": ids, "strat": strat, "b": b, "avail": avail}
     print("make_figs: USE_RAW=True -- plotting real per-item data")
 else:
-    print("make_figs: USE_RAW=False -- reconstruction mode from example_findings.json")
+    print("make_figs: USE_RAW=False -- illustrative schematic mode from example_findings.json")
     rng = np.random.RandomState(42)
 
 # ============================ FIGURE 1 ======================================
@@ -249,7 +249,7 @@ ax2[0].plot(xx, np.polyval(z, xx), color="#8c564b", lw=1.4)
 ax2[0].axhline(0, ls=":", c="gray", lw=0.8)
 ax2[0].set_xlabel(gt_label)
 ax2[0].set_ylabel("\u0394b = b(low-prec) \u2212 b(high-prec)")
-ax2[0].set_title("A  Probe 5: DIF shift \u0394b vs difficulty\n(decision stat: slope + CI)")
+ax2[0].set_title("A  Probe 5: DIF shift \u0394b vs difficulty\n(decision stat: Spearman \u03c1 + bootstrap CI)")
 
 ax2[1].bar(range(1, len(fr)+1), fr, color=["#2ca02c" if v > 0 else "#d62728" for v in fr])
 ax2[1].axhline(0, c="k", lw=0.8)
